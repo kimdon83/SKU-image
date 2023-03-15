@@ -1,0 +1,7 @@
+data.json
+*.csv
+*.html
+*.xlsx
+*.exe
+LICENSE.chromedriver
+*.zip
