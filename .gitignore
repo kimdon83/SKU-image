@@ -5,3 +5,5 @@ data.json
 *.exe
 LICENSE.chromedriver
 *.zip
+*.png
+*.txt

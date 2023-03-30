@@ -30,15 +30,15 @@ print("Connection Established:")
 # %%
 # smartsheet_flag=input("will you read smartsheet? (yes/no")
 
-# # if smartsheet_flag=="yes":
-# smartsheet_client = smartsheet.Smartsheet(data['smartsheetAPI'])
-# smartsheet_client.Sheets.get_sheet_as_csv(
-#   data['sku_image_sheet'],           # sheet_id
-#   r'C:\Users\KISS Admin\Downloads')
-# # TODO: change above location if the location is not effective
+# if smartsheet_flag=="yes":
+smartsheet_client = smartsheet.Smartsheet(data['smartsheetAPI'])
+smartsheet_client.Sheets.get_sheet_as_csv(
+  data['sku_image_sheet'],           # sheet_id
+  r'C:\Users\KISS Admin\Downloads')
+# TODO: change above location if the location is not effective
 
-# name_File = r"C:\Users\KISS Admin\Downloads\Product Photo.csv"
-name_File = r"C:\Users\KISS Admin\Desktop\IVYENT_DH\Rq25. Image Sql\Product Photo.csv"
+name_File = r"C:\Users\KISS Admin\Downloads\Product Photo.csv"
+# name_File = r"C:\Users\KISS Admin\Desktop\IVYENT_DH\Rq25. Image Sql\Product Photo.csv"
 
 new_df = pd.read_csv(name_File)
 # else:
